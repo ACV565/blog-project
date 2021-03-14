@@ -1,0 +1,124 @@
+.container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: minmax(1fr, auto);
+    grid-template-areas: 
+    "hd"
+    "banner"
+    "main"
+    "about"
+    "ft";
+}
+
+header{
+    grid-area: hd;
+    height: 60vh;
+}
+
+.image-banner{
+    grid-area: banner;
+}
+
+main {
+    grid-area:main;
+    margin: 20% 0;
+}
+
+#about {
+    grid-area:about;
+    margin-bottom: 10%;
+}
+
+footer {
+    grid-area:ft;
+}
+
+header > h1, 
+header > h2,
+header > p {
+    position: relative;
+    text-align: right;
+    margin-right: 5%;
+}
+
+header > h2{
+    margin-top: 25%;
+}
+.hero-img{
+    position: absolute;
+    background-image: url(../images/hero.png);
+    background-repeat: no-repeat;
+    width: 268px;
+    height: 268px;
+
+}
+
+.image-banner {
+    margin: auto;
+    width: 239px;
+    height: 239px;
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 22px;
+}
+
+main > h2,
+main > h3 {
+    text-align: center;
+}
+
+.blog {
+    margin: auto;
+    width: 196px;
+    height: 251px;
+    background-image: url(../images/blog-bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    margin-top: 5%;
+}
+
+.blog > h3 {
+    text-align: center;
+    padding-top: 6%;
+}
+
+.blog > h4 {
+    text-align: right;
+    margin-top: 80%;
+    margin-right: 5%;
+}
+
+#about > h2 {
+    text-align: center;
+    margin-bottom: 5%;
+}
+.card{
+    width: 210px;
+    background-color: #EBEBED;
+    border-radius: 22px;
+    padding: 5%;
+    margin: auto;
+}
+
+.author {
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.author > img{
+    width: 30%;
+    border-radius: 50px;
+}
+
+.author > h3 {
+    padding-top: 12%;
+    padding-left: 10%;
+}
+
+.card > p {
+    padding-top: 5%;
+    margin:auto;
+    width: 80%;
+}

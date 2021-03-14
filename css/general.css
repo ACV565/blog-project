@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html {
+    font-size: 10px;
+}
+h1 {
+    font-size: 3.6rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+p{
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content:flex-end;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav > ul{
+    display: flex;
+    list-style-type: none;
+}
+
+footer {
+    background-color: #EBEBED;
+}
+
+footer > p {
+    font-size: 0.8rem;
+    text-align: center;
+}
