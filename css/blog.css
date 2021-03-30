@@ -1,0 +1,99 @@
+.container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: minmax(1fr, auto);
+    grid-template-areas: 
+    "hd"
+    "bdc"
+    "blog"
+    "ft";
+}
+
+
+.hero{
+    grid-area: hd;
+    height: 60vh;
+    background-image: url(../images/blog-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.breadcrumb {
+    grid-area: bdc;
+    display: inline-flex;
+    justify-content: flex-start;
+    max-width: 100%;
+    margin: 5% 10%;
+}
+.breadcrumb ul {
+    
+}
+
+.breadcrumb a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.breadcrumb li::before {
+    content: ">";
+}
+
+.breadcrumb li:last-child::after {
+    content: ">";
+}
+    
+.breadcrumb li:first-child::before {
+    content: "";
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0 10%;
+}
+h2 {
+    margin:0 10%;
+}
+p {
+    margin: 5% 10%;
+}
+
+.advert {
+    grid-area: advert;
+}
+article {
+    grid-area: blog;
+}
+
+article > ul {
+    margin: 0 20%;
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
+footer {
+    grid-area: ft;
+}
+
+
+
+@media only screen
+and (min-width: 1200px){
+    .container{
+        grid-template-columns: 0.2fr 1fr;
+        grid-template-areas: 
+        "hd hd"
+        "bdc bdc"
+        "advert  blog"
+        "ft ft";
+    }
+    .breadcrumb {
+        grid-area: bdc;
+        margin: 5% 10%;
+    }
+
+    article > ul {
+        line-height: 3.5rem;
+        font-size: 2rem;
+    }
+}
