@@ -23,6 +23,7 @@
     list-style: none;
     display: flex;
     justify-content: flex-start;
+    margin: 5% 0;
 }
 
 .breadcrumb a{
@@ -66,12 +67,17 @@ article > ul {
     font-size: 1.2rem;
 }
 
-footer {
-    grid-area: ft;
-}
-
 #side-advert-1 {
     display: none;
+}
+
+.mb-advert > img {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+footer {
+    grid-area: ft;
 }
 
 @media only screen
@@ -92,6 +98,11 @@ and (min-width: 1200px){
         line-height: 3.5rem;
         font-size: 2rem;
     }
+
+    article > p {
+        line-height: 3.5rem;
+    }
+
     #side-advert-1 {
         display: block;
     }
