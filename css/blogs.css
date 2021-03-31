@@ -1,0 +1,124 @@
+.hero{
+    grid-area: hd;
+    height: 60vh;
+    background-image: url(../images/blogs-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    grid-area:main;
+    margin: 20% auto;
+}
+
+main > h2,
+main > h3 {
+    text-align: center;
+}
+
+.blog {
+    margin: auto;
+    width: 70%;
+    background-image: url(../images/blog-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    margin-top: 5%;
+}
+
+.blog h3 {
+    text-align: center;
+    padding-top: 6%;
+}
+
+.blog h4 {
+    text-align: right;
+    margin-top: 80%;
+    margin-right: 5%;
+}
+
+.blog a {
+    color: black;
+    text-decoration: none;
+}
+
+@media only screen
+  and (min-width: 600px)
+  and (max-width: 899px) {
+    .hero-img{
+        height: 60vh;
+    }
+    header{
+        height: 60vh;
+    }
+
+    .image-banner {
+        margin-top: 5%;
+    }
+
+    .blog h4 {
+        font-size: 2rem;
+    }
+
+    .card{
+        width: 60%;
+    }
+        
+    .author > img{
+        border-radius: 100px;
+    }
+        
+    .card > p {
+        font-size: 1.8rem;
+        line-height: 5rem;
+    }
+  }
+
+  @media only screen
+  and (min-width: 900px)
+ {
+    .hero-img{
+    height: 100vh;
+    }
+    header{
+        height: 100vh;
+    }
+
+    .image-banner {
+        margin-top: 35%;
+    }
+    .blog h4 {
+        font-size: 3rem;
+    }
+
+    .card{
+        width: 60%;
+        background-color: #EBEBED;
+        border-radius: 22px;
+        padding: 5%;
+        margin: auto;
+    }
+        
+    .author > img{
+        border-radius: 100%;
+    }
+        
+    .card > p {
+        line-height: 6rem;
+    }
+  }
+
+  @media only screen
+  and (min-width: 1200px){
+    .hero-img{
+        height: 1200px;
+        }
+        header{
+            height: 100vh;
+        }
+    .image-banner {
+        margin-top: 25%;
+        height: 70vh;
+    }
+  }
