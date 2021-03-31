@@ -97,6 +97,7 @@ and (min-width: 1200px){
     article > ul {
         line-height: 3.5rem;
         font-size: 2rem;
+        font-weight: 400;
     }
 
     article > p {
