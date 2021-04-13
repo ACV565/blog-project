@@ -1,6 +1,16 @@
+.container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: minmax(1fr, auto);
+    grid-template-areas: 
+    "hd"
+    "main"
+    "ft";
+}
+
 .hero{
     grid-area: hd;
-    height: 60vh;
+    height: 30vh;
     background-image: url(../images/blogs-hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,25 +26,43 @@ main > h3 {
     text-align: center;
 }
 
+.blogs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
 .blog {
     margin: auto;
-    width: 70%;
-    background-image: url(../images/blog-bg.jpg);
+    width: 25%;
+    height: 50vh;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     border-radius: 5px;
     margin-top: 5%;
 }
 
+
+.blog-1{
+    background-image: url(../images/m-trip-blog.png);
+}
+.blog-2{
+    background-image: url(../images/c-trip-blog.png);
+}
+.blog-3{
+    background-image: url(../images/ct-trip-blog.png);
+}
 .blog h3 {
     text-align: center;
     padding-top: 6%;
+    padding-right: 2%;
+    padding-left: 2%;
 }
 
 .blog h4 {
     text-align: right;
-    margin-top: 80%;
+    margin-top: 90%;
     margin-right: 5%;
 }
 
@@ -53,12 +81,10 @@ main > h3 {
         height: 60vh;
     }
 
-    .image-banner {
-        margin-top: 5%;
-    }
 
     .blog h4 {
         font-size: 2rem;
+        margin-top: 75%;
     }
 
     .card{
@@ -78,15 +104,13 @@ main > h3 {
   @media only screen
   and (min-width: 900px)
  {
-    .hero-img{
-    height: 100vh;
-    }
-    header{
+ 
+    .hero{
         height: 100vh;
     }
 
-    .image-banner {
-        margin-top: 35%;
+    .blog {
+        height: 80vh;
     }
     .blog h4 {
         font-size: 3rem;
@@ -111,6 +135,8 @@ main > h3 {
 
   @media only screen
   and (min-width: 1200px){
+    
+    }
     .hero-img{
         height: 1200px;
         }
@@ -121,4 +147,4 @@ main > h3 {
         margin-top: 25%;
         height: 70vh;
     }
-  }
+  
