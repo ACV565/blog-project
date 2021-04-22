@@ -57,11 +57,14 @@ nav ul{
     justify-content: space-between;
 }
 
-.filter {
-    background: rgba( 255, 255, 255, 0.50 );
-    height: 100%;
+.card {
+width: 210px;
+background-color: #EBEBED;
+border-radius: 22px;
+padding: 5%;
+margin: auto;
+filter: drop-shadow(0 0 0.75rem #1d3557);
 }
-
 
 footer {
     background-color: #a8dadc;
@@ -140,5 +143,8 @@ footer > p {
     h3 {
         font-size: 4.5rem;
     }
-
+footer > p {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
   }
