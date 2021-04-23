@@ -1,4 +1,4 @@
-.container{
+.container {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: minmax(1fr, auto);
@@ -9,38 +9,25 @@
     "ft";
 }
 
-header{
+header {
     grid-area: hd;
     height: 40vh;
     margin-top: -5%;
     margin-bottom: 2%;
 }
 
-.image-banner{
-    grid-area: banner;
-}
-
-main {
-    grid-area:main;
-    margin: 8% auto;
-    margin-bottom: 25%;
-}
-footer {
-    grid-area:ft;
-    margin-top: 25%;
-}
-
 header > h1, 
-header > h2{
+header > h2 {
     position: relative;
     text-align: right;
     margin-right: 4%;
 }
 
-header > h2{
+header > h2 {
     margin-top: 25%;
 }
-.hero-img{
+
+.hero-img {
     position: absolute;
     background-image: url(../images/hero.png);
     background-repeat: no-repeat;
@@ -50,6 +37,7 @@ header > h2{
 }
 
 .image-banner {
+    grid-area: banner;
     margin: auto;
     margin-top: 15%;
     width: 100%;
@@ -58,8 +46,12 @@ header > h2{
     background-repeat: no-repeat;
     background-size:contain;
     background-position: center;
-    
-    
+}
+
+main {
+    grid-area:main;
+    margin: 8% auto;
+    margin-bottom: 25%;
 }
 
 main > h2,
@@ -98,15 +90,20 @@ main > h3 {
     border-radius: 5px;
 }
 
-
+footer {
+    grid-area:ft;
+    margin-top: 25%;
+}
 
 @media only screen
   and (min-width: 600px)
   and (max-width: 899px) {
-    .hero-img{
+
+    .hero-img {
         height: 60vh;
     }
-    header{
+
+    header {
         height: 60vh;
     }
 
@@ -120,37 +117,37 @@ main > h3 {
   }
 
   @media only screen
-  and (min-width: 900px)
- {
-    .hero-img{
+  and (min-width: 900px) {
+
+    .hero-img {
     height: 100vh;
     }
-    header{
+
+    header {
         height: 100vh;
     }
 
     .image-banner {
-        margin-top: 35%;
+        margin-top: 15%;
     }
 
-    .card{
+    .card {
         width: 60%;
-        background-color: #EBEBED;
-        border-radius: 22px;
-        padding: 5%;
-        margin: auto;
     }
   }
 
   @media only screen
-  and (min-width: 1200px){
-    .hero-img{
+  and (min-width: 1200px) {
+
+    .hero-img {
         height: 1200px;
-        }
-        header{
+    }
+
+    header {
             height: 100vh;
             margin-bottom: 10%;
-        }
+    }
+
     .image-banner {
         margin-top: 25%;
         height: 70vh;

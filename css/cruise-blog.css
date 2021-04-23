@@ -28,7 +28,7 @@ p {
 .hero {
     grid-area: hd;
     height: 60vh;
-    background-image: url(../images/ct-hero.jpg);
+    background-image: url(../images/cruise-hero.JPG);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
