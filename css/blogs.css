@@ -1,3 +1,5 @@
+@import url(general.css);
+
 .container {
     display: grid;
     grid-template-columns: 100%;
