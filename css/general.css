@@ -1,3 +1,5 @@
+@import url(nav.css);
+
 * {
     margin: 0;
     padding: 0;
@@ -36,28 +38,6 @@ p {
     font-weight: 400;
 }
 
-nav {
-    display: flex;
-    justify-content:space-evenly;
-    position: relative;
-    z-index: 99;
-    background-color: #a8dadc;
-}
-
-.nav-link {
-    display: block;
-    padding: 0.5rem;
-    text-decoration: none;  
-    color: #000;
-    font-weight: 700;
-}
-
-nav ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-between;
-}
-
 .card {
 width: 210px;
 background-color: #EBEBED;
@@ -80,10 +60,6 @@ footer > p {
   and (min-width: 600px)
   and (max-width: 899px) {
     
-    nav a {
-        font-size: 1.8rem;    
-    }
-
     h1 {
         font-size: 5rem;
     }
@@ -104,11 +80,6 @@ footer > p {
   @media only screen
   and (min-width: 900px) {
     
-    nav a {
-        font-size: 1.8rem;  
-        padding: 1rem;  
-    }
-
     h1 {
         font-size: 8rem;
     }
@@ -129,10 +100,6 @@ footer > p {
   @media only screen
   and (min-width: 1200px) {
     
-    nav a {
-        font-size: 2rem;    
-    }
-
     h1 {
         font-size: 12rem;
     }
@@ -145,8 +112,8 @@ footer > p {
         font-size: 4.5rem;
     }
     
-footer > p {
-    font-size: 1.8rem;
-    margin-bottom: 0;
-}
+    footer > p {
+        font-size: 1.8rem;
+        margin-bottom: 0;
+    }
   }

@@ -1,0 +1,48 @@
+nav {
+    display: flex;
+    justify-content:space-evenly;
+    position: relative;
+    z-index: 99;
+    background-color: #a8dadc;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;  
+    color: #000;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+@media only screen
+  and (min-width: 600px)
+  and (max-width: 899px) {
+    
+    nav a {
+        font-size: 1.8rem;    
+    }
+  }
+
+  @media only screen
+  and (min-width: 900px) {
+    
+    nav a {
+        font-size: 1.8rem;  
+        padding: 1rem;  
+    }
+}
+
+
+  @media only screen
+  and (min-width: 1200px) {
+    
+    nav a {
+        font-size: 2rem;    
+    }
+}
